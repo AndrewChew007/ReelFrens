@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@font-face {
+    font-family: "8-bit-mage";
+    src: url(fonts/diary-of-an-8-bit-mage-font/misc/Diary\ of\ an\ 8-bit\ mage-02c5.woff) format("woff");
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Press Start 2P", "8-bit-mage";
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    /* background: linear-gradient(45deg,rgba(255, 214, 0, 1) 5%, rgba(255, 122, 0, 1) 25%, rgba(255, 0, 105, 1) 50%, rgb(211, 0, 197) 75%, rgba(118, 56, 250, 1) 95%); */
+    background: linear-gradient(45deg, rgb(160, 124, 237) 10%, rgb(255, 147, 248) 90%);
+}
+
+.page_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 3px;
+    width: 100%;
+    background: black;
+}
+.card_header {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    margin: 1rem 1rem;
+}
+.card_checkbox {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+}
+.card_checkbox:checked {
+    background-image: url(media/tick.svg);
+    background-size: 120%;
+    background-position: 0px 1px;
+    background-repeat: no-repeat;
+}
+.card_title {
+    margin: 2px 0 0 .75rem;
+}
+
+.card_content {
+    position: relative;
+    user-select: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease-in;
+}
+.card_content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    height: 2px;
+    width: 95%;
+    background: rgba(200, 200, 200, 0.7);
+}
