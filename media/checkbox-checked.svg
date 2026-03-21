@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><use xlink:href="#_Image1" x="1" y="1" width="31px" height="30px"/><defs><image id="_Image1" width="31px" height="30px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAoklEQVRIie3XSwqAMAwE0Kl4/yvXnSiYZCb9CZqVCOZlakUFFlYxztcZztYZaaqK/qnNvq9IPiqxWyuSn0Fn49fVrTPxZRvucT/NwK2NXEbjJgyMTe7CEd7y7Iewh1fjuBvs4WxDFb6tpnLPowHoxBGuvudl2MOVAVJwhDMDpGEGZwZIwSyuNKRhBWcaS7CKe4AMA8CeuCYFMfWdr9f/j2VJHdRWKCMI/FhyAAAAAElFTkSuQmCC"/></defs></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 34 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <use xlink:href="#_Image1" x="0" y="0" width="33px" height="32px"/>
+    <g transform="matrix(1,0,0,1,-256,-256)">
+        <use xlink:href="#_Image2" x="261" y="260" width="30px" height="22px"/>
+    </g>
+    <defs>
+        <image id="_Image1" width="33px" height="32px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAg0lEQVRYhe2X0QqAIAxF76L//2V7aYEGm+i0QfeAT5I73kWpwKY4872INXkEFZkihUQbU1T8vfUAAOfIQwOYm/Mkosj/YgreUUW1oJsUSVBCoYRCCYUSypcS5R7bfmBt8Yrft+OBEgolFO+0veqgW62bIokUEt4Xc/VlCIDfc16It3IBhQULQRcVv5QAAAAASUVORK5CYII="/>
+        <image id="_Image2" width="30px" height="22px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAWCAYAAADXYyzPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAcElEQVRIieWWSw4AEAxEEfe/MitJJYP6TlJvaWHSh6pzJPyDjIRyw4NgCC04XtoX6a0wVzGiusgng4d6JWZVN/tECYaPXLHxlF6JKdWqNtwLlhp9Y30ZuurdiqZ/Oe0ZH9EroakeKepVujVE/DcI0MilNwo4eB9zpgAAAABJRU5ErkJggg=="/>
+    </defs>
+</svg>

@@ -3,23 +3,72 @@
     font-family: "8-bit-mage";
     src: url(fonts/diary-of-an-8-bit-mage-font/misc/Diary\ of\ an\ 8-bit\ mage-02c5.woff) format("woff");
 }
+@font-face {
+    font-family: "pix-chinese";
+    /* src: url(fonts/unifontex-font/Unifontexmono-lxY45.ttf); */
+    src: url(fonts/zpix/zpix.ttf);
+}
 
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "Press Start 2P", "8-bit-mage";
+    font-family: "Press Start 2P", "8-bit-mage", "pix-chinese";
+    user-select: none;
     max-width: 800px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0 1.5rem;
-    /* background: linear-gradient(45deg,rgba(255, 214, 0, 1) 5%, rgba(255, 122, 0, 1) 25%, rgba(255, 0, 105, 1) 50%, rgb(211, 0, 197) 75%, rgba(118, 56, 250, 1) 95%); */
-    background: linear-gradient(45deg, rgb(160, 124, 237) 10%, rgb(255, 147, 248) 90%);
+    /* #ffd600 #ff7a00 #ff0069 #d300c5 #7638fa */
+    /* background: linear-gradient(180deg, rgb(190, 163, 248) 75%, rgb(250, 188, 246) 100%);
+    background-attachment: fixed; */
 }
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    background: linear-gradient(180deg, rgb(190, 163, 248) 65%, rgb(250, 188, 246) 80%);
+    z-index: -1;
+}
+
 
 .page_header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem;
+
+    text-align: center;
+    font-family: "Press Start 2P";
+
+    margin: 1rem 0 0;
+    padding: 1rem;
+    box-shadow: 
+        inset 2px 2px 0 rgb(79, 62, 114),
+        inset -2px -2px 0 rgb(232, 221, 254);
+}
+.desc_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0.5rem;
+
+    max-width: 95%;
+}
+.desc {
+    min-width: 0;
+}
+#smily_face {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    background-image: url(media/smily_face.svg);
+}
+
+/* -------------------------------------------------- */
+.card_container {
+    margin: 1rem 0 0;
+    font-family: "Press Start 2P", "8-bit-mage", "pix-chinese";
 }
 .card {
     display: flex;
@@ -38,45 +87,62 @@ body {
 .card_header {
     display: flex;
     align-items: center;
-    user-select: none;
-    font-size: 1.5rem;
-    font-weight: 600;
 
-    margin: 1rem 1rem;
+    margin: 1.5rem 1rem;
+
+    font-family: "Press Start 2P", "8-bit-mage", "pix-chinese";
 }
 .card_checkbox {
     appearance: none;
+    cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
-    border: 2px solid #000000;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 4px 4px 0px black;
-}
-.card_checkbox:checked {
-    background-image: url(media/tick.svg);
-    background-size: 120%;
-    background-position: 0px 1px;
+    flex-shrink: 0;
+    background-image: url(media/checkbox-unchecked.svg);
     background-repeat: no-repeat;
 }
+.card_checkbox:checked {
+    background-image: url(media/checkbox-checked.svg);
+}
 .card_title {
-    margin: 2px 0 0 .75rem;
+    margin: 0px 0 0 .75rem;
+    max-width: 80%;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.card_plus {
+    margin-left: auto;
+    rotate: 0deg;
+    transition: rotate 200ms ease-in;
+    font-family: "8-bit-mage";
+    font-size: 2rem;
+    font-weight: bold;
 }
 
+/* -------------------------------------------------- */
 .card_content {
     position: relative;
-    user-select: none;
     max-height: 0;
     overflow: hidden;
     transition: max-height 200ms ease-in;
+
+    font-family: "8-bit-mage", "pix-chinese";
+    font-size: 1.25rem;
+    padding: 0 2.25rem;
 }
 .card_content::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 2.5%;
+    left: 5%;
     height: 2px;
-    width: 95%;
-    background: rgba(200, 200, 200, 0.7);
+    width: 90%;
+    background: rgba(250, 250, 250, 0.7);
+}
+
+/* -------------------------------------------------- */
+.volume_container {
+    display: flex;
+    margin: 1rem 0 0;
 }

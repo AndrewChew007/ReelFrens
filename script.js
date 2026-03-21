@@ -1,16 +1,18 @@
 document.querySelectorAll(".card").forEach((card)=>{
     
-    const title = card.querySelector(".card_header");
+    const header = card.querySelector(".card_header");
     const content = card.querySelector(".card_content");
     
-    title.addEventListener("click", (e)=>{
+    header.addEventListener("click", (e)=>{
         if (e.target.tagName === "INPUT") return;
 
         if (card.classList.contains("expand")) {
             content.style.maxHeight = "0";
+            header.querySelector(".card_plus").style.rotate = "0deg";
             card.classList.remove("expand");
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
+            header.querySelector(".card_plus").style.rotate = "135deg";
             card.classList.add("expand")
         }
     });
