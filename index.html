@@ -241,26 +241,28 @@
                 <span class="card_plus">+</span>
             </div>
             <div class="card_content">
-                
+                <img src="media/selfie_1_edited.png" alt="selfie_1_edited">
             </div>
         </div>
     </section>
 
     <section style="margin: 1rem 0 0;">
-        <p>Enter Reels per Day:</p>
+        <p style="text-shadow: 2px 2px 0 #ff7a00;">Enter Reels per Day:</p>
         <div class="volume_container">
             <button id="decrease">-</button>
-            <input type="number" id="volume_number" value="3" min="3" max="25">
+            <input type="number" id="volume_number" value="3" min="1" max="25" readonly>
             <button id="increase">+</button>
             <span id="volume_desc">100% GUARANTEE that this number will not be followed!</span>
         </div>
     </section>
     
-    <section>
-
+    <section class="submit_container">
+        <img src="media/selfie_2_edited.png" alt="selfie_2_edited">
+        <input type="text" placeholder="Enter IG Handle">
+        <button id="submit_button">Submit</button>
     </section>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
