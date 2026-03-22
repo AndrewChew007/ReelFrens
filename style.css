@@ -28,6 +28,7 @@ body {
     width: 100vw;
     height: 120vh;
     background: linear-gradient(180deg, rgb(190, 163, 248) 65%, rgb(250, 188, 246) 80%);
+    /* #ffd600 #ff7a00 #ff0069 #d300c5 #7638fa */
     z-index: -1;
 }
 
@@ -42,9 +43,18 @@ body {
 
     margin: 1rem 0 0;
     padding: 1rem;
-    box-shadow: 
+    /* box-shadow: 
         inset 2px 2px 0 rgb(79, 62, 114),
-        inset -2px -2px 0 rgb(232, 221, 254);
+        inset -2px -2px 0 rgb(232, 221, 254); */
+    box-shadow: 
+        inset 4px 4px 0 #ff0069,
+        inset -4px -4px 0 #ffd600;
+}
+.logo {
+    font-size: 2rem;
+    text-shadow: 
+        2px 2px 0 #ffd600,
+        -2px -2px 0 #ff0069;
 }
 .desc_container {
     display: flex;
@@ -57,6 +67,8 @@ body {
 }
 .desc {
     min-width: 0;
+    /* color: #ff7a00; */
+    text-shadow: 2px 2px 0 #ff7a00;
 }
 #smily_face {
     width: 1.5rem;
@@ -110,6 +122,8 @@ body {
 
     font-size: 1.25rem;
     font-weight: bold;
+    text-shadow: 
+        2px 2px 0 #ffd600;
 }
 .card_plus {
     margin-left: auto;
@@ -118,6 +132,12 @@ body {
     font-family: "8-bit-mage";
     font-size: 2rem;
     font-weight: bold;
+    color: #ff0069;
+    text-shadow: 
+        2px 2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        -2px -2px 0 black;
 }
 
 /* -------------------------------------------------- */
