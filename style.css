@@ -16,7 +16,7 @@ body {
     max-width: 800px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     /* #ffd600 #ff7a00 #ff0069 #d300c5 #7638fa */
     /* background: linear-gradient(180deg, rgb(190, 163, 248) 75%, rgb(250, 188, 246) 100%);
     background-attachment: fixed; */
@@ -41,7 +41,6 @@ body {
     text-align: center;
     font-family: "Press Start 2P";
 
-    margin: 1rem 0 0;
     padding: 1rem;
     /* box-shadow: 
         inset 2px 2px 0 rgb(79, 62, 114),
@@ -114,7 +113,7 @@ body {
     background-repeat: no-repeat;
 }
 .card_checkbox:checked {
-    background-image: url(media/checkbox-checked.svg);
+    background-image: url(media/checkbox-hotpink-checked.svg);
 }
 .card_title {
     margin: 0px 0 0 .75rem;
@@ -164,5 +163,37 @@ body {
 /* -------------------------------------------------- */
 .volume_container {
     display: flex;
-    margin: 1rem 0 0;
+    flex-direction: row;
+}
+#volume_number {
+    appearance: textfield;
+    font: 1.25rem "8-bit-mage";
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    padding: 0;
+
+    width: 4rem;
+    margin: 0 .5rem;
+}
+#volume_number::-webkit-inner-spin-button,
+#volume_number::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+.volume_container button {
+    /* appearance: none; */
+    font: bold 1rem "8-bit-mage";
+    background-color: #ff7a00;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 1px 6px 1px 7px;
+}
+#volume_desc {
+    margin-left: 1rem;
+
+    /* font-family: "8-bit-mage";
+    font-size: 1rem; */
+    font: 1rem "8-bit-mage";
 }

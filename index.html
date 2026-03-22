@@ -246,11 +246,20 @@
         </div>
     </section>
 
-    <section class="volume_container">
-        <input type="number" id="volume_number" placeholder="Reels per day" value="3">
-        <span id="volume_desc">100% GUARANTEE that this number will not be followed!</span>
+    <section style="margin: 1rem 0 0;">
+        <p>Enter Reels per Day:</p>
+        <div class="volume_container">
+            <button id="decrease">-</button>
+            <input type="number" id="volume_number" value="3" min="3" max="25">
+            <button id="increase">+</button>
+            <span id="volume_desc">100% GUARANTEE that this number will not be followed!</span>
+        </div>
     </section>
     
+    <section>
+
+    </section>
+
 
     <script src="script.js"></script>
 </body>

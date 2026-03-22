@@ -17,3 +17,16 @@ document.querySelectorAll(".card").forEach((card)=>{
         }
     });
 });
+
+document.querySelectorAll(".volume_container").forEach((container)=>{
+    const input = container.querySelector("#volume_number");
+    const decrease = container.querySelector("#decrease");
+    const increase = container.querySelector("#increase");
+
+    increase.addEventListener("click", ()=>{
+        input.stepUp();
+    });
+    decrease.addEventListener("click", ()=>{
+        input.stepDown();
+    });
+});
